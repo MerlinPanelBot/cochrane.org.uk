@@ -1,0 +1,35 @@
+title: Peter Cochrane OBE
+short_title: Peter Chochrane
+description: Peter Cochrane OBE - Developing Technology- Driven Business - Science - Science - Technology - Engineering - Professional Advise - Goverments - Companies - International Operations - Team Management - Budgets -  CTO - CEO - Director - Professor - UK - USA - Europe - EU - External Examiner - Companys - Private - Advisor
+  Welcome to my home page, life and world.
+  I have been professionally engaged in science, technology and engineering for over 40 years, and my primary focus remains the solving of problems and the creation of wealth through the application of new technologies and business solutions.
+baseurl:
+permalink: "/:path/"
+defaults:
+- scope:
+    path: ""
+  values:
+    layout: page
+- scope:
+    path: ""
+    type: posts
+  values:
+    layout: post
+collections:
+  people:
+    output: true
+    permalink: "/about/:path/"
+  posts:
+    output: true
+  projects:
+    output: true
+    permalink: "/projects/:path/"
+# tag_page_layout: tag_page
+# tag_page_dir: tag
+jekyll-archives:
+  enabled: all
+  layout: "archive"
+gems:
+- jekyll-menus
+- jekyll-feed
+- jekyll-archives
